@@ -1,0 +1,190 @@
+body{
+    padding-bottom: 500px;
+    font-family: sans-serif;
+    color: #8138ff;
+}
+
+/* 1 flex */
+
+.flex{
+    display: flex;
+    background-color: #c4a2ff;
+    margin-bottom: 20px;
+}
+
+/* 2 flex column */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    background-color: #c4a2ff;
+    margin-bottom: 20px;
+}
+
+/* wrap */
+.flex-wrap{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid #c4a2ff;
+}
+
+/* justify content */
+
+.center,
+.space-around,
+.space-between,
+.end{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
+    width: 50px;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* align itens */
+
+.align-center,
+.flex-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid #4c00ce;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: end;
+}
+
+.stretch .box{
+    align-items: stretch;
+    height: auto;
+}
+
+/* gap */
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px #ff000f;
+    gap: 2px;
+}
+
+/* order */
+
+.order{
+    display: flex;
+}
+
+#one{
+    order:1;
+}
+
+#two{
+    order: 2;
+}
+
+#three{
+    order: 3;
+}
+
+/* grow */
+
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+.grow .big{
+   flex: 2; 
+}
+
+/* basis */
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+}
+
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+/* shorthand */
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .box .difference{
+    flex: 3 1 40px ;
+}
+
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid #8138ff;
+}
+
+.auto-alignment .difference{
+    align-self: center;
+}
